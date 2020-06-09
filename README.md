@@ -48,10 +48,10 @@ protected $listen = [
 Add to `config/services.php`:
 ```php
 'odnoklassniki' => [
-    'client_id' => env('ODNOKLASSNIKI_ID'),
-    'client_secret' => env('ODNOKLASSNIKI_SECRET'),
-    'client_public' => env('ODNOKLASSNIKI_PUBLIC'),
-    'redirect' => env('ODNOKLASSNIKI_REDIRECT'),  
+    'client_id' => env('OK_ID'),
+    'client_secret' => env('OK_SECRET'),
+    'client_public' => env('OK_PUBLIC'),
+    'redirect' => env('OK_REDIRECT'),  
 ],
 ```
 
@@ -59,8 +59,8 @@ Append provider values to your `.env` file:
 **Note: Add both public and secret keys!**
 ```
 // other values above
-ODNOKLASSNIKI_ID=your_app_id_for_the_service
-ODNOKLASSNIKI_PUBLIC=your_app_public_for_the_service
-ODNOKLASSNIKI_SECRET=your_app_secret_for_the_service
-ODNOKLASSNIKI_REDIRECT=https://example.com/login
+OK_ID=your_app_id_for_the_service
+OK_PUBLIC=your_app_public_for_the_service
+OK_SECRET=your_app_secret_for_the_service
+OK_REDIRECT=https://example.com/login
 ```
